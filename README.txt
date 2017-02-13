@@ -1,6 +1,6 @@
 EMd360 v1603 (2016-07-19) by Bobby Curtis
 
-EMd360 is a "free to use" tool to perform an in-depth investigation of a Oracle Enterprise 
+EMd360 is a "free to use" tool to perform an in-depth investigation of an Oracle Enterprise 
 Manager environment. It collects detailed information around the Oracle Management Server (OMS)
 and Oracle Management Repository (OMR). It also helps to document any findings.
 EMd360 installs nothing and is completely SQL based against the OMS. Expectation is that
