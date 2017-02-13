@@ -3,9 +3,9 @@ EMd360 v1603 (2016-07-19) by Bobby Curtis
 EMd360 is a "free to use" tool to perform an in-depth investigation of an Oracle Enterprise 
 Manager environment. It collects detailed information around the Oracle Management Server (OMS)
 and Oracle Management Repository (OMR). It also helps to document any findings.
-EMd360 installs nothing and is completely SQL based against the OMS. Expectation is that
-EMd360 should be executed as SYS on the OMR.  It takes a few minutes to execute. Output 
-ZIP file can be large (several MBs), so you may want to execute EMd360 from a 
+EMd360 installs nothing and is based completely on SQL against the OMS. Expectation is that
+EMd360 should be executed as SYS on the OMR.  It takes a few minutes to execute, and ZIP file 
+output can be large (several MBs). As a result, you may want to execute EMd360 from a 
 system directory with at least 1 GB of free space. 
 
 Steps
@@ -17,9 +17,9 @@ Steps
    $ cd EMd360
    $ sqlplus <dba_user>/<dba_pwd>
 
-2. Execute EMd360.sql indicating two input parameters. The first one is to specify 
+2. EMd360.sql requires two input parameters. The first one is to specify 
    the OMS name. The second one is to specify the OMR database SID. Example below specifies 
-   the OMS of "pebble" and the OMR of "emrep". EMd360 uses 31 days by default. 
+   the OMS of "pebble" and the OMR of "emrep". EMd360 uses a 31 day history by default. 
 
    SQL> @emd360.sql pebble emrep 
    
@@ -59,4 +59,5 @@ EMd360 v1603 (2016-07-19) by Bobby Curtis
 -Renumbered the output by section and sub-section
 -Capitalized the headers of each column to see clearer
 
-
+EMd360 v1603 (2017-02-13)
+-Edited README.txt file
